@@ -56,7 +56,7 @@ ROOT_URLCONF = 'she_codes_news.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'TEMPLATES'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

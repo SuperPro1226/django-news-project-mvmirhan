@@ -10,9 +10,8 @@
         <meta name="description" content="">
         <meta name="author" content="Marivic Mirhan">
         <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="{% static
-            'styles.css' %}">
-            {% block stylesheets %}{% endblock %}  
+        <link rel="stylesheet" type="text/css" href="{%static 'styles.css' %}">
+        {% block stylesheets %}{% endblock %}  
     </head>
 
     <body>
@@ -23,6 +22,7 @@
                 </a>
             </div>
             <!-- include nav here -->
+            {% include './nav.html' %}
         </header>
 
         <!-- content blocks here -->
