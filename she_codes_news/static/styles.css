@@ -2,6 +2,7 @@
 
 body {
     background-color: rgb(240, 239, 239);
+    /* border: 10px solid blue; */
 }
 
 header {
@@ -9,11 +10,12 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000;
+    /* border: 3px solid red; */
 }
 
-img {
+/* img {
     filter: grayscale(100%);
-}
+} */
 
 h1 {
     font-family: 'Montserrat Subrayada', sans-serif;
@@ -51,6 +53,26 @@ a {
 
 a, p {
     font-family: monospace;
+    font-size: 15px;
+}
+
+.add-story {
+    display:flexbox;
+    flex-wrap: wrap;
+    text-align:center;
+    padding: 20px;
+    font-size: 15px;
+    border: 3px solid red;
+}
+
+.button {
+    font-size: 75%;
+    width: 120px;
+    height: 40px;
+}
+
+.add-story label {
+    border: 3px solid red
 }
 
 
