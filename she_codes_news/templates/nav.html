@@ -1,4 +1,5 @@
 <nav class = "a-nav">
+
     <a id="a-nav" href="{% url 'news:index' %}">Home</a>
     
     {% if request.user.is_authenticated %}
@@ -9,7 +10,9 @@
         <a id="a-nav" href="{% url 'login'%}">Login</a>
         <a id="a-nav" href="{% url 'users:createAccount' %}">Create New Account</a>
     {% endif %}
+    
+</nav>
 
+<!-- superceded code -->
     <!-- <a id="a-nav" href="{% url 'users:createAccount' %}">Create New Account</a> -->
     <!-- <a id="a-nav" href="{% url 'news:newStory' %}">Write New Story</a> -->
-</nav>
