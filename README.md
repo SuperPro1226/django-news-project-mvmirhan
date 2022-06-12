@@ -3,8 +3,11 @@
 <!-- Starter code for the Plus Django project. -->
 
 
-1. Link to Heroku: 
-    This doesn't work even though my Heroku dashboard indicated that I deployed a successful build. I have provided a screenshot 
+1. Link to Heroku:
+    https://still-inlet-12314.herokuapp.com/
+    https://still-inlet-12314.herokuapp.com/news/
+
+    These links do not work even though my Heroku dashboard indicated that I deployed a successful build. I have provided screenshots 
 
 2. Features implemented. Please see accompanying screenshots in the z_project_screenshots folder
 
