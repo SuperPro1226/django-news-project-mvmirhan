@@ -7,12 +7,12 @@ from users.models import CustomUser
 from .forms import CustomUserCreationForm, CustomUserChangeForm
 from .models  import CustomUser
 
-# Register your models here.
+# Register your models here to tie the new model=CustomUser and forms
 
 class CustomUserAdmin(UserAdmin):
-    add_form: CustomUserCreationForm
+    add_form = CustomUserCreationForm
     form = CustomUserChangeForm
-    model: CustomUser
+    model =  CustomUser
     list_display = ['email','username',]
 
 admin.site.register(CustomUser,CustomUserAdmin)

@@ -17,8 +17,11 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+    # Added the URL for the App=news
     path('news/', include('news.urls')),
     path('admin/', admin.site.urls),
+    # Added the URL for the App=users
     path('users/', include('users.urls')),
+    # Added the URL for the App=users' Login page
     path('users/', include('django.contrib.auth.urls')),
 ]

@@ -1,14 +1,16 @@
 <nav class = "a-nav">
 
-    <a id="a-nav" href="{% url 'news:index' %}">Home</a>
+    <a id="a-nav" href="{% url 'news:index' %}">Home</a>                            <!--Added a link from template header to Home page-->
     
-    {% if request.user.is_authenticated %}
-        <a id="a-nav" href="#">Welcome, {{user.username}}</a>
-        <a id="a-nav" href="{% url 'news:newStory' %}">Write New Story</a>
-        <a id="a-nav" href="{% url 'logout' %}">Logout</a>
-    {% else %}
-        <a id="a-nav" href="{% url 'login'%}">Login</a>
-        <a id="a-nav" href="{% url 'users:createAccount' %}">Create New Account</a>
+    {% if request.user.is_authenticated %}                                          <!--The nav links only shows when a user is logged in-->
+        <a id="a-nav" href="#">Welcome, {{user.username}}</a>                       <!--Shows user's username-->
+        <a id="a-nav" href="{% url 'news:newStory' %}">Write New Story</a>          <!--Added a link from template header to the form to add story -->
+        <a id="a-nav" href="{% url 'logout' %}">Logout</a>                          <!--Shows "Logout"-->
+
+    {% else %}                                                                      <!--The nav links only shows when NO user is logged in-->
+        <a id="a-nav" href="{% url 'login'%}">Login</a>                             <!--Shows "Login"-->
+        <a id="a-nav" href="{% url 'users:createAccount' %}">Create New Account</a> <!--Shows "Create New Account"-->
+
     {% endif %}
     
 </nav>

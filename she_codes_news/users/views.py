@@ -5,17 +5,18 @@ from django.views import generic
 from .models import CustomUser
 from .forms import CustomUserCreationForm
 
-# Create your views here.
-
+# Added a view for creating a new account
 class CreateAccountView(CreateView):
     form_class = CustomUserCreationForm
     success_url= reverse_lazy('login')
     template_name= 'users/createAccount.html'
 
-# Configure a view for user profile
+# Added a view for user profile
 class UserView(generic.DetailView):
     model = CustomUser
     template_name = 'users/userProfile.html'
     context_object_name = 'user'
+
+
 
 
